@@ -4,127 +4,139 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Ragazzi Nuovi Today</title>
-  <link rel="icon" type="image/png" href="Logo_RN.png">
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@600&display=swap" rel="stylesheet">
   <style>
     body {
-      font-family: 'Open Sans', sans-serif;
-      background: #fff;
-      color: #333;
+      font-family: 'Arial', sans-serif;
       margin: 0;
       padding: 0;
+      background: white;
+      color: #222;
     }
     header {
-      background-color: #fff;
-      border-bottom: 2px solid #ffa500;
-      padding: 1em;
+      background: white;
       display: flex;
       align-items: center;
-      justify-content: center;
-      flex-direction: column;
-      text-align: center;
+      padding: 1em;
+      border-bottom: 2px solid #f4f4f4;
     }
     header img {
-      width: 60px;
-      height: auto;
-      margin-bottom: 0.5em;
+      height: 40px;
+      margin-right: 0.75em;
     }
-    h1 {
-      font-family: 'Poppins', sans-serif;
-      color: #ff6600;
+    header h1 {
+      font-size: 1.5em;
+      color: #FF6600;
       margin: 0;
     }
-    h2 {
-      font-weight: normal;
-      font-size: 1.1em;
-      margin-top: 0.3em;
+    header p {
+      font-size: 0.9em;
+      color: #555;
+      margin: 0;
     }
     section {
       padding: 1em;
-      border-bottom: 1px solid #eee;
     }
-    .titolo {
-      font-weight: bold;
-      color: #ff6600;
+    h2 {
+      color: #FF6600;
+      margin-bottom: 0.3em;
     }
-    .rubrica {
-      margin-top: 1em;
-      padding-left: 1em;
-      border-left: 3px solid #ffa500;
+    .entry {
+      margin-bottom: 2em;
+      display: flex;
+      align-items: flex-start;
     }
-    .personaggio {
-      margin-bottom: 1.5em;
+    .entry img {
+      width: 80px;
+      height: 80px;
+      object-fit: cover;
+      border-radius: 8px;
+      margin-right: 1em;
     }
-    .personaggio img {
-      width: 100%;
-      max-width: 300px;
-      height: auto;
-      display: block;
-      margin: 0.5em auto;
+    .entry h3 {
+      margin: 0;
+      color: #FF6600;
+      font-size: 1.1em;
     }
-    footer {
-      text-align: center;
-      font-size: 0.9em;
-      color: #aaa;
-      padding: 2em 1em;
+    .entry p {
+      margin: 0.3em 0 0 0;
     }
   </style>
 </head>
 <body>
   <header>
-    <img src="Logo_RN.png" alt="Logo Ragazzi Nuovi">
-    <h1>Ragazzi Nuovi Today</h1>
-    <h2>Tutti gli RN. Qui ed Ora.</h2>
+    <img src="Logo_RN.png" alt="Logo RN">
+    <div>
+      <h1>Ragazzi Nuovi Today</h1>
+      <p>Tutti gli RN. Qui ed Ora.</p>
+    </div>
   </header>
 
   <section>
-    <p class="titolo">GRANDE SUBITO!</p>
-    <p>La solita routine mi stanca, è ripetitiva e mi sento ingabbiato come se il posto dove sono non facesse più per me, non ne posso più, voglio essere grande!</p>
-  </section>
+    <h2>GRANDE SUBITO!</h2>
+    <div class="entry">
+      <img src="/mnt/data/A_screenshot_of_\"Ragazzi_Nuovi_Today,\"_an_Italian_.png" alt="Grande Subito">
+      <p>La solita routine mi stanca, è ripetitiva e mi sento ingabbiato come se il posto dove sono non facesse più per me, non ne posso più, voglio essere grande!</p>
+    </div>
 
-  <section class="rubrica">
-    <div class="personaggio">
-      <p class="titolo">Michele</p>
-      <p>A volte mi vorrei isolare da tutto e da tutti. Allora mi chiudo nella mia camera e lì rimango delle ore. Vorrei capire, cosa mi succede?</p>
-    </div>
-    <div class="personaggio">
-      <p class="titolo">Gaia</p>
-      <p>Da quando sono entrata al gruppo ho scoperto un posto dove poter parlare liberamente di me e dei miei problemi, la cosa più bella è che quando gli altri ti ascoltano non ti giudicano!</p>
-    </div>
-    <div class="personaggio">
-      <p class="titolo">Marta</p>
-      <p>Sin da quando ero bambina mio padre e mia madre mi hanno sempre detto cosa fare. Vorrei più libertà!</p>
-    </div>
-    <div class="personaggio">
-      <p class="titolo">Diego</p>
-      <p>Spesso con i miei amici non ci capiamo e finiamo per litigare, ma quando sono solo e perso, mi rendo conto che nonostante tutto ci vogliamo bene</p>
-    </div>
-  </section>
+    <h2>PERSONAGGI DELLA SETTIMANA</h2>
 
-  <section>
-    <p class="titolo">MARIO</p>
-    <p><strong>TRADITORE!</strong> - Queste sono le parole che sono state rivolte a Mario quando ha detto di non poter uscire perché impegnato in parrocchia</p>
-  </section>
-
-  <section>
-    <p class="titolo">Pagina Sportiva</p>
-    <div class="personaggio">
-      <p><strong>ELISA - GRANDE TRIONFO!</strong><br>
-      Nonostante gli allenamenti abbiano costretto Elisa a rinunciare a tante cose che avrebbe voluto fare, alla fine la sua squadra è riuscita a vincere quella partita importante.</p>
+    <div class="entry">
+      <img src="/mnt/data/A_screenshot_of_\"Ragazzi_Nuovi_Today,\"_an_Italian_.png" alt="Michele">
+      <div>
+        <h3>Michele</h3>
+        <p>A volte mi vorrei isolare da tutto e da tutti. Allora mi chiudo nella mia camera e lì rimango delle ore. Vorrei capire, cosa mi succede?</p>
+      </div>
     </div>
-    <div class="personaggio">
-      <p><strong>VINCENZO - MIRACOLO!</strong><br>
-      Per la prima volta con l'Estate così prossima, Vincenzo è riuscito a recuperare tutte le insufficienze ad Aprile, mai così presto ci era riuscito anche se stava per mollare durante l'anno. Ha dichiarato: "Sono molto soddisfatto di questo risultato."</p>
-    </div>
-  </section>
 
-  <section>
-    <p class="titolo">Scoperto un altro te stesso</p>
+    <div class="entry">
+      <img src="/mnt/data/A_screenshot_of_\"Ragazzi_Nuovi_Today,\"_an_Italian_.png" alt="Gaia">
+      <div>
+        <h3>Gaia</h3>
+        <p>Da quando sono entrata al gruppo ho scoperto un posto dove poter parlare liberamente di me e dei miei problemi, la cosa più bella è che quando gli altri ti ascoltano non ti giudicano!</p>
+      </div>
+    </div>
+
+    <div class="entry">
+      <img src="/mnt/data/A_screenshot_of_\"Ragazzi_Nuovi_Today,\"_an_Italian_.png" alt="Marta">
+      <div>
+        <h3>Marta</h3>
+        <p>Sin da quando ero bambina mio padre e mia madre mi hanno sempre detto cosa fare. Vorrei più libertà!</p>
+      </div>
+    </div>
+
+    <div class="entry">
+      <img src="/mnt/data/A_screenshot_of_\"Ragazzi_Nuovi_Today,\"_an_Italian_.png" alt="Diego">
+      <div>
+        <h3>Diego</h3>
+        <p>Spesso con i miei amici non ci capiamo e finiamo per litigare, ma quando sono solo e perso, mi rendo conto che nonostante tutto ci vogliamo bene</p>
+      </div>
+    </div>
+
+    <h2>RUBRICHE</h2>
+
+    <div class="entry">
+      <div>
+        <h3>Mario</h3>
+        <p><strong>"TRADITORE!"</strong> – Queste sono le parole che sono state rivolte a Mario quando ha detto di non poter uscire perché impegnato in parrocchia.</p>
+      </div>
+    </div>
+
+    <div class="entry">
+      <div>
+        <h3>Elisa – GRANDE TRIONFO!</h3>
+        <p>Nonostante gli allenamenti abbiano costretto Elisa a rinunciare a tante cose che avrebbe voluto fare, alla fine la sua squadra è riuscita a vincere quella partita importante.</p>
+      </div>
+    </div>
+
+    <div class="entry">
+      <div>
+        <h3>Vincenzo – MIRACOLO!</h3>
+        <p>Per la prima volta con l'estate così prossima, Vincenzo è riuscito a recuperare tutte le insufficienze ad aprile. Mai così presto ci era riuscito, anche se stava per mollare durante l’anno. Ha dichiarato: "Sono molto soddisfatto di questo risultato."</p>
+      </div>
+    </div>
+
+    <h2>Scoperto un altro te stesso</h2>
     <p>Quando sto davanti allo specchio e mi guardo dentro, mi accorgo che in me ci sono delle cose che non mi piacciono. Non lo sopporto, vorrei scappare!</p>
   </section>
-
-  <footer>
-    &copy; 2025 Ragazzi Nuovi Today
-  </footer>
 </body>
 </html>
