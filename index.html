@@ -1,176 +1,145 @@
 <!DOCTYPE html>
 <html lang="it">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ragazzi Nuovi Today</title>
-    <style>
-        body {
-            font-family: 'Helvetica Neue', Arial, sans-serif;
-            margin: 0;
-            padding: 1em;
-            background-color: #ffffff;
-            color: #333;
-            transition: background-color 0.3s, color 0.3s;
-        }
-
-        @media (prefers-color-scheme: dark) {
-            body {
-                background-color: #121212;
-                color: #e0e0e0;
-            }
-        }
-
-        header {
-            text-align: center;
-            margin-bottom: 2em;
-            animation: fadeIn 1s ease-out;
-        }
-        header h1 {
-            font-size: 2.5em;
-            margin-bottom: 0.2em;
-        }
-        header p {
-            font-size: 1.2em;
-            color: #777;
-        }
-
-        section, article {
-            margin-bottom: 2em;
-            animation: slideUp 0.8s ease-out;
-        }
-
-        h2 {
-            font-size: 2em;
-            margin-top: 1em;
-            color: #444;
-        }
-
-        .personaggio, .trafiletto {
-            margin-bottom: 1.5em;
-            border-bottom: 1px solid #ddd;
-            padding-bottom: 1em;
-        }
-
-        .personaggio h3, .trafiletto h3 {
-            margin-top: 0.5em;
-            color: #222;
-            font-size: 1.5em;
-        }
-
-        .trafiletto h4 {
-            color: #666;
-            margin: 0.2em 0;
-        }
-
-        .trafiletto img {
-            width: 100%;
-            max-width: 300px;
-            border-radius: 8px;
-            margin: 0.5em 0;
-        }
-
-        button {
-            background-color: #007BFF;
-            color: white;
-            border: none;
-            padding: 0.5em 1em;
-            margin-top: 0.5em;
-            border-radius: 20px;
-            font-size: 1em;
-            cursor: pointer;
-            transition: background-color 0.3s;
-        }
-
-        button:hover {
-            background-color: #0056b3;
-        }
-
-        @keyframes fadeIn {
-            from { opacity: 0; }
-            to { opacity: 1; }
-        }
-
-        @keyframes slideUp {
-            from { transform: translateY(20px); opacity: 0; }
-            to { transform: translateY(0); opacity: 1; }
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ragazzi Nuovi Today</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: white;
+      color: #222;
+    }
+    header {
+      background: white;
+      display: flex;
+      align-items: center;
+      padding: 1em;
+      border-bottom: 2px solid #f4f4f4;
+    }
+    header img {
+      height: 40px;
+      margin-right: 0.75em;
+    }
+    header h1 {
+      font-size: 1.5em;
+      color: #FF6600;
+      margin: 0;
+    }
+    header p {
+      font-size: 0.9em;
+      color: #555;
+      margin: 0;
+    }
+    section {
+      padding: 1em;
+    }
+    h2 {
+      color: #FF6600;
+      margin-bottom: 0.3em;
+    }
+    .entry {
+      margin-bottom: 2em;
+      display: flex;
+      align-items: flex-start;
+    }
+    .entry img {
+      width: 80px;
+      height: 80px;
+      object-fit: cover;
+      border-radius: 8px;
+      margin-right: 1em;
+    }
+    .entry h3 {
+      margin: 0;
+      color: #FF6600;
+      font-size: 1.1em;
+    }
+    .entry p {
+      margin: 0.3em 0 0 0;
+    }
+  </style>
 </head>
 <body>
+  <header>
+    <img src="Logo_RN.png" alt="Logo RN">
+    <div>
+      <h1>Ragazzi Nuovi Today</h1>
+      <p>Tutti gli RN. Qui ed Ora.</p>
+    </div>
+  </header>
 
-<header>
-    <h1>Ragazzi Nuovi Today</h1>
-    <p>Tutti gli RN. Qui ed Ora.</p>
-</header>
-
-<article>
+  <section>
     <h2>GRANDE SUBITO!</h2>
-    <p>La solita routine mi stanca, è ripetitiva e mi sento ingabbiato come se il posto dove sono non facesse più per me, non ne posso più, voglio essere grande!</p>
-    <button>Scopri di più</button>
-</article>
+    <div class="entry">
+      <img src="grande_subito.png" alt="Grande Subito">
+      <p>La solita routine mi stanca, è ripetitiva e mi sento ingabbiato come se il posto dove sono non facesse più per me, non ne posso più, voglio essere grande!</p>
+    </div>
 
-<section class="rubrica">
-    <h2>Personaggi della settimana</h2>
+    <h2>PERSONAGGI DELLA SETTIMANA</h2>
 
-    <div class="personaggio">
+    <div class="entry">
+      <img src="michele.png" alt="Michele">
+      <div>
         <h3>Michele</h3>
         <p>A volte mi vorrei isolare da tutto e da tutti. Allora mi chiudo nella mia camera e lì rimango delle ore. Vorrei capire, cosa mi succede?</p>
+      </div>
     </div>
 
-    <div class="personaggio">
+    <div class="entry">
+      <img src="gaia.png" alt="Gaia">
+      <div>
         <h3>Gaia</h3>
         <p>Da quando sono entrata al gruppo ho scoperto un posto dove poter parlare liberamente di me e dei miei problemi, la cosa più bella è che quando gli altri ti ascoltano non ti giudicano!</p>
+      </div>
     </div>
 
-    <div class="personaggio">
+    <div class="entry">
+      <img src="marta.png" alt="Marta">
+      <div>
         <h3>Marta</h3>
         <p>Sin da quando ero bambina mio padre e mia madre mi hanno sempre detto cosa fare. Vorrei più libertà!</p>
+      </div>
     </div>
 
-    <div class="personaggio">
+    <div class="entry">
+      <img src="diego.png" alt="Diego">
+      <div>
         <h3>Diego</h3>
-        <p>Spesso con i miei amici non ci capiamo e finiamo per litigare, ma quando sono solo e perso, mi rendo conto che nonostante tutto ci vogliamo bene.</p>
+        <p>Spesso con i miei amici non ci capiamo e finiamo per litigare, ma quando sono solo e perso, mi rendo conto che nonostante tutto ci vogliamo bene</p>
+      </div>
     </div>
-</section>
 
-<section class="trafiletti">
-    <h2>Accaduto della settimana</h2>
+    <h2>RUBRICHE</h2>
 
-    <div class="trafiletto">
-        <h3>MARIO</h3>
-        <h4>TRADITORE!</h4>
-        <img src="https://i.imgur.com/0I3U8zX.png" alt="Mario triste fumetto">
-        <p>Queste sono le parole che sono state rivolte a Mario quando ha detto di non poter uscire perché impegnato in parrocchia.</p>
-        <button>Leggi di più</button>
+    <div class="entry">
+      <img src="mario.png" alt="Mario">
+      <div>
+        <h3>Mario</h3>
+        <p><strong>"TRADITORE!"</strong> – Queste sono le parole che sono state rivolte a Mario quando ha detto di non poter uscire perché impegnato in parrocchia.</p>
+      </div>
     </div>
-</section>
 
-<section class="sportiva">
-    <h2>Pagina Sportiva</h2>
-
-    <div class="trafiletto">
-        <h3>ELISA</h3>
-        <h4>GRANDE TRIONFO!</h4>
-        <img src="https://i.imgur.com/VJgTwc5.png" alt="Vittoria sportiva fumetto">
+    <div class="entry">
+      <img src="elisa.png" alt="Elisa">
+      <div>
+        <h3>Elisa – GRANDE TRIONFO!</h3>
         <p>Nonostante gli allenamenti abbiano costretto Elisa a rinunciare a tante cose che avrebbe voluto fare, alla fine la sua squadra è riuscita a vincere quella partita importante.</p>
-        <button>Scopri la storia</button>
+      </div>
     </div>
 
-    <div class="trafiletto">
-        <h3>VINCENZO</h3>
-        <h4>MIRACOLO!</h4>
-        <img src="https://i.imgur.com/2YrSJiO.png" alt="Miracolo scolastico fumetto">
-        <p>Per la prima volta con l'Estate così prossima, Vincenzo è riuscito a recuperare tutte le insufficienze ad Aprile, mai così presto ci era riuscito anche se stava per mollare durante l'anno. Ha dichiarato: "Sono molto soddisfatto di questo risultato".</p>
-        <button>Guarda il risultato</button>
+    <div class="entry">
+      <img src="vincenzo.png" alt="Vincenzo">
+      <div>
+        <h3>Vincenzo – MIRACOLO!</h3>
+        <p>Per la prima volta con l'estate così prossima, Vincenzo è riuscito a recuperare tutte le insufficienze ad aprile. Mai così presto ci era riuscito, anche se stava per mollare durante l’anno. Ha dichiarato: "Sono molto soddisfatto di questo risultato."</p>
+      </div>
     </div>
-</section>
 
-<section class="scoperta">
     <h2>Scoperto un altro te stesso</h2>
     <p>Quando sto davanti allo specchio e mi guardo dentro, mi accorgo che in me ci sono delle cose che non mi piacciono. Non lo sopporto, vorrei scappare!</p>
-    <button>Approfondisci</button>
-</section>
-
+  </section>
 </body>
 </html>
